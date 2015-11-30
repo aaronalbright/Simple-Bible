@@ -1,0 +1,2 @@
+#Notes
+I'm not sure if having an index is helpful or not. The purpose of the index would be to have one place of all the verses, regardless of topic or location. Not sure what purpose that will be to the end user, but I know I'm going to want one for myself anyway so I might as well provide it to the user. Maybe just in the footer?
