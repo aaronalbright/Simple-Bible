@@ -19,6 +19,7 @@ ul {
 	float: right;
 	padding: 3%;
 	font-family: 'Quicksand', sans-serif;	
+	border: 1px black solid;
 }
 
 .btn {
