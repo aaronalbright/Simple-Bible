@@ -1,0 +1,19 @@
+body {
+  font-family: 'Oxygen', sans-serif;
+	width: 80%;
+	margin: auto;
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
+
+nav {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14pt;
+}
+
+/* Other fonts
+
+font-family: 'Montserrat', sans-serif; */
