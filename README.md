@@ -1,5 +1,7 @@
 #Notes
 
+##Week 1
+
 I'm not sure if having an index is helpful or not. The purpose of the index would be to have one place of all the verses, regardless of topic or location. Not sure what purpose that will be to the end user, but I know I'm going to want one for myself anyway so I might as well provide it to the user. Maybe just link to it in the footer?
 
 **Also**
@@ -10,5 +12,7 @@ The buttons are also just place holders, I'll probably make my own and then just
 
 The more I read into bootstrap, even it's javascript capabilities, it seems like it'll suit my needs well. Though, I'm not sure if that would be "cheating" or not since I'm not inventing the javacsript on my own. 
 
-###Basically,
+**Basically,**
 Am I allowed to use Bootstrap? All of it? Some of it?
+
+##Week 2

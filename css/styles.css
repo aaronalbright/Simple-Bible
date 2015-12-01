@@ -7,6 +7,13 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14pt;
+	margin-left: 1%;
+	font-weight: 700
+}
+
 nav {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 14pt;
@@ -14,16 +21,26 @@ nav {
 	padding: 3% 0;
 }
 
-ul {
+.catFloat {
 	list-style: none;
 	float: right;
 	padding: 3%;
 	font-family: 'Quicksand', sans-serif;	
 	border: 1px black solid;
+	width: 100px;
 }
 
 .btn {
 	margin: 1%;
+}
+
+footer {
+	text-align: center;
+}
+
+footer a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10pt;
 }
 
 /* Other fonts
@@ -31,7 +48,7 @@ ul {
 font-family: 'Montserrat', sans-serif; */
 
 @media only screen and (max-width:600px) {
-	ul {
+	.catFloat {
 		display: none;
 		float: none;
 	}
