@@ -13,6 +13,7 @@ The buttons are also just place holders, I'll probably make my own and then just
 The more I read into bootstrap, even it's javascript capabilities, it seems like it'll suit my needs well. Though, I'm not sure if that would be "cheating" or not since I'm not inventing the javacsript on my own. 
 
 **Basically,**
+
 Am I allowed to use Bootstrap? All of it? Some of it?
 
 ##Week 2

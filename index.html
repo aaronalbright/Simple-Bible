@@ -14,7 +14,6 @@
 	</head>
 	
 	<body>
-		
 		<div class="container">
 		
 		<div class="row">
@@ -29,41 +28,107 @@
 			
 				
 			<h2>Select a topic to find verses that relates.</h2>
-	
-			<div class="row catFloat">
-				<a>TOPIC</a>
-				<a>TOPIC</a>
-				<a>TOPIC</a>
-				<a>TOPIC</a>
-				<a>TOPIC</a>
-				<a>TOPIC</a>
-				<a>TOPIC</a>
-				<a>TOPIC</a>
-				<a>TOPIC</a>
-				<a>TOPIC</a>
+	<!-- Temporary disable 
+
+			<div class="catSidebar">
+				<ul>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+					<li><a>TOPIC</a></li>
+				</ul>
 			</div>
+			-->
 			
 			<div class="row">
-				<div class="col-xs-9">
-				<input class="btn btn-default" value="TOPIC">
-				<input class="btn btn-default" value="TOPIC">
-				<input class="btn btn-default" value="TOPIC">
-				<input class="btn btn-default" value="TOPIC">
-				<input class="btn btn-default" value="TOPIC">
-				<input class="btn btn-default" value="TOPIC">
-				<input class="btn btn-default" value="TOPIC">
-				<input class="btn btn-default" value="TOPIC">
+				<div class="col-xs-12">
+					
+					<h2>Select version:</h2>
+					<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+    <input type="radio" id="esv" autocomplete="off" checked>ESV
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" id="kjv" autocomplete="off">KJV
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" id="nlt" autocomplete="off">NLT
+  </label>
+</div>
+
+					
+					<h2>What the Bible says about...</h2>
+					
+					<!-- Topic: Grace -->
+					<button class="btn btn-default btn-lg grace-topic">Grace</button>
+					
+					<div class="modal fade" id="graceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						 <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+				 <h1 class="modal-title" id="graceModalLabel">Grace</h1>
+			</div>
+			<div class="modal-body"><p id="grace"></p></div>
+			<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+							 </div>
+						</div>
+					</div>
+						
+					<!-- Topic: Faith -->
+					<button class="btn btn-default btn-lg">Faith</button>
+					
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
 				</div>
 			</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>MORE WORDS</h2>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					<button class="btn btn-default btn-lg" >TOPIC</button>
+					</div>
+				</div>
 			
-
+			
+				<div class="row">	
 			<footer>
 			<a href="/about.html">About</a>
 	<span>|</span>
 	<a href="/index.html">Home</a>
-			</footer>
+				</footer>
+				</div>
 
+			</div>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+		<script src="js/verses.json"></script>
+		<script src="js/content-loader.js"></script>
 	</body>	
 	
 </html>

@@ -7,6 +7,10 @@ h1 {
 	text-align: center;
 }
 
+.modal-title {
+	text-align: left;
+}
+
 h2 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 14pt;
@@ -21,21 +25,26 @@ nav {
 	padding: 3% 0;
 }
 
-.catFloat {
+ul {
 	list-style: none;
-	float: right;
-	padding: 3%;
 	font-family: 'Quicksand', sans-serif;	
-	border: 1px black solid;
-	width: 100px;
+	border: 1px #000 solid;
+	padding: 30px;
 }
 
-.btn {
-	margin: 1%;
+.catSidebar {
+	position: fixed;
+	right: 50px;
+	top: 200px;
+}
+
+button {
+	margin: 0.5%;
 }
 
 footer {
 	text-align: center;
+	position: static;
 }
 
 footer a {
@@ -48,7 +57,7 @@ footer a {
 font-family: 'Montserrat', sans-serif; */
 
 @media only screen and (max-width:600px) {
-	.catFloat {
+	.catSidebar {
 		display: none;
 		float: none;
 	}
