@@ -8,8 +8,7 @@ $(document).ready(function(){
 
 	
 	function loadVerses() {
-		$('#pride').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
-		$('#faith').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
+		$('.verseContent').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
 	};
 	
 	loadVerses();
@@ -18,7 +17,7 @@ $(document).ready(function(){
 		
 		switch ( $(this).attr('id') ) {
 						case "esv" :
-								selectedVersion = verse[i].esv;
+								selectedVersion = verse[0].esv;
 								verseVersion = "ESV";
 								break;
 						case "kjv" :
@@ -31,6 +30,8 @@ $(document).ready(function(){
                 break;	
 		};
 		
+		loadVerses();
+		
 	});
 	
 	
@@ -38,16 +39,24 @@ $(document).ready(function(){
 	
 	
 $('.pride-topic').click (function() {
-	$('#prideModal').modal();
 	i = 0;
-	loadVerses();
+	loadVerses;
+	$('#prideModal').modal();
 });
 	
 $('.faith-topic').click (function() {
-	$('#faithModal').modal();
 	i = 1;
+	loadVerses;
+	$('#faithModal').modal();
+});
+	
+$('.hope-topic').click(function() {
+	$('#hopeModal').modal();
+	i = 2;
 	loadVerses();
 });
+											 
+											 
 	
 	
 	

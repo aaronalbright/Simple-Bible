@@ -45,6 +45,7 @@ button {
 footer {
 	text-align: center;
 	position: static;
+	margin-top: 10%;
 }
 
 footer a {
