@@ -9,6 +9,7 @@ $(document).ready(function(){
 	
 	function loadVerses() {
 		$('.verseContent').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
+		$('.verseHeader').html("<h1 class='modal-title' id='prideModalLabel'>" + verse[i].topic + "</h1>");
 	};
 	
 	loadVerses();
@@ -17,7 +18,7 @@ $(document).ready(function(){
 		
 		switch ( $(this).attr('id') ) {
 						case "esv" :
-								selectedVersion = verse[0].esv;
+								selectedVersion = verse[i].esv;
 								verseVersion = "ESV";
 								break;
 						case "kjv" :
@@ -41,13 +42,13 @@ $(document).ready(function(){
 $('.pride-topic').click (function() {
 	i = 0;
 	loadVerses;
-	$('#prideModal').modal();
+	$('#verseModal').modal();
 });
 	
 $('.faith-topic').click (function() {
 	i = 1;
 	loadVerses;
-	$('#faithModal').modal();
+	$('#verseModal').modal();
 });
 	
 $('.hope-topic').click(function() {
