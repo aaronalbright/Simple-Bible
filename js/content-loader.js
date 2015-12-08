@@ -1,32 +1,35 @@
 $(document).ready(function(){
 
+	var i = 0
 	
-	var selectedVersion = verse[0].ESV
+	var selectedVersion = verse[i].esv
 	
 	var verseVersion = ""
+
 	
-	function loadGrace() {
-		$('#grace').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[0].Location + " " + verseVersion + "</p>");
+	function loadVerses() {
+		$('#pride').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
+		$('#faith').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
 	};
 	
-	$('input').click(function() {
+	loadVerses();
+	
+	$('label').click(function() {
 		
-		switch ( $('input').attr("id") ) {
+		switch ( $(this).attr('id') ) {
 						case "esv" :
-								selectedVersion = verse[0].ESV;
+								selectedVersion = verse[i].esv;
 								verseVersion = "ESV";
-                break;
+								break;
 						case "kjv" :
-								selectedVersion = verse[0].KJV;
+								selectedVersion = verse[i].kjv;
 								verseVersion = "KJV";
 				      break;
             case "nlt" :
-								selectedVersion = verse[0].NLT;
+								selectedVersion = verse[i].nlt;
 								verseVersion = "NLT";
                 break;	
 		};
-		
-		$('#grace').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[0].Location + " " + verseVersion + "</p>");
 		
 	});
 	
@@ -34,10 +37,17 @@ $(document).ready(function(){
 	
 	
 	
-$('.grace-topic').click (function() {
-	$('#graceModal').modal();
+$('.pride-topic').click (function() {
+	$('#prideModal').modal();
+	i = 0;
+	loadVerses();
 });
 	
+$('.faith-topic').click (function() {
+	$('#faithModal').modal();
+	i = 1;
+	loadVerses();
+});
 	
 	
 	
