@@ -5,6 +5,7 @@ body {
 h1 {
 	font-family: 'Quicksand', sans-serif;
 	text-align: center;
+	margin-top: 3%;
 }
 
 .modal-title {
@@ -23,6 +24,7 @@ nav {
 	font-size: 14pt;
 	text-align: center;
 	padding: 3% 0;
+	padding-top: 1%;
 }
 
 ul {
@@ -44,19 +46,30 @@ button {
 
 footer {
 	text-align: center;
-	position: static;
 	margin-top: 10%;
+	margin-bottom: 2%;
 }
 
-footer a {
+footer a, footer p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 10pt;
 }
- 
 
-@media only screen and (max-width:600px) {
-	.catSidebar {
-		display: none;
-		float: none;
-	}
+.btn-default {
+	min-width: 200px;
+}
+
+.btn-primary {
+	min-width: 100px;
+}
+
+article h2 {
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 14pt;
+	line-height: 1.5;
+}
+
+article p {
+	font-size: 12pt;
 }
