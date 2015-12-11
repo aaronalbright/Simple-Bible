@@ -2,13 +2,13 @@ $(document).ready(function(){
 
 	var i = 0
 	
-	var selectedVersion = verse[i].esv
+	var q = 'esv'
 	
 	var verseVersion = "ESV"
 
 	// Loads verse into the modal
 	function loadVerses() {
-		$('.verseContent').html("<p>" + selectedVersion + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
+		$('.verseContent').html("<p>" + verse[i][q] + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
 		$('.verseHeader').html("<h1 class='modal-title' id='prideModalLabel'>" + verse[i].topic + "</h1>");
 	};
 	
@@ -19,15 +19,15 @@ $(document).ready(function(){
 		
 		switch ( $(this).attr('id') ) {
 						case "esv" :
-								selectedVersion = verse[i].esv;
+								q = 'esv';
 								verseVersion = "ESV";
 								break;
 						case "kjv" :
-								selectedVersion = verse[i].kjv;
+								q = 'kjv';
 								verseVersion = "KJV";
 				      break;
             case "nlt" :
-								selectedVersion = verse[i].nlt;
+								q = 'nlt';
 								verseVersion = "NLT";
                 break;	
 		};
