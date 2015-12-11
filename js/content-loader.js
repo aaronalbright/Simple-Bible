@@ -37,6 +37,23 @@ $(document).ready(function(){
 	});
 	
 	
+/* This is supposed to activate and switch each i var dependening the button click, denoated by its class. I figured this was be easier than making and writing out indiviual .click fuctions for each button. For some reason, it's not working.	
+
+$('button').click( function() { 
+	
+	switch ( $(this).attr('class') ) {
+		case "pride-topic" :
+			alert(i);
+			break;
+		case "faith-topic" :
+			alert(i);
+			break;
+	};
+	
+});
+*/	
+	
+	
 // So instead, this works. While tedious, at least it works.	
 $('.pride-topic').click (function() {
 	i = 0;
