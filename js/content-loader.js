@@ -1,15 +1,17 @@
 $(document).ready(function(){
 
-	var i = 0
+	var topic = 'Pride'
 	
-	var q = 'esv'
+	var q = 'esv';
 	
-	var verseVersion = "ESV"
-
+	var verseVersion = "ESV";
+	
+	console.log(verse['Pride'].location);
+	
 	// Loads verse into the modal
 	function loadVerses() {
-		$('.verseContent').html("<p>" + verse[i][q] + "</p>" + "<p>" + "— "  + verse[i].location + " " + verseVersion + "</p>");
-		$('.verseHeader').html("<h1 class='modal-title' id='prideModalLabel'>" + verse[i].topic + "</h1>");
+		$('.verseContent').html("<p>" + verse[topic][q] + "</p>" + "<p>" + "— "  + verse[topic].location + " " + verseVersion + "</p>");
+		$('.verseHeader').html("<h1 class='modal-title' id='prideModalLabel'>" + topic + "</h1>");
 	};
 	
 	loadVerses();
@@ -37,41 +39,15 @@ $(document).ready(function(){
 	});
 	
 	
-/* This is supposed to activate and switch each i var dependening the button click, denoated by its class. I figured this was be easier than making and writing out indiviual .click fuctions for each button. For some reason, it's not working.	
 
-$('button').click( function() { 
-	
-	switch ( $(this).attr('class') ) {
-		case "pride-topic" :
-			alert(i);
-			break;
-		case "faith-topic" :
-			alert(i);
-			break;
-	};
-	
-});
-*/	
 	
 	
 // So instead, this works. While tedious, at least it works.	
-$('.pride-topic').click (function() {
-	i = 0;
-	loadVerses();
-	$('#verseModal').modal();
-});	
 	
-	
-$('.faith-topic').click (function() {
-	i = 1;
+$('.topics').on ('click', '.topic', function() {
+	topic = $(this).attr('id');
 	loadVerses();
 	$('#verseModal').modal();
 });
-	
-$('.hope-topic').click(function() {
-	i = 2;
-	loadVerses();
-	$('#verseModal').modal();
-});
-							 	
+						 	
 });
