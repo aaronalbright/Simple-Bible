@@ -14,9 +14,9 @@ h1 {
 
 h2 {
 	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
 	font-size: 14pt;
 	margin-left: 1%;
-	font-weight: 700
 }
 
 nav {
@@ -66,6 +66,7 @@ footer a, footer p {
 article h2 {
 	text-align: center;
 	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
 	font-size: 14pt;
 	line-height: 1.5;
 }

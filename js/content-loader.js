@@ -1,52 +1,40 @@
 $(document).ready(function(){
 
-	var topic = 'Pride'
-	
-	var q = 'esv';
-	
-	var verseVersion = "ESV";
-	
-	console.log(verse['Pride'].location);
+	var topic = 'Pride';
+	var version = 'esv';
+	var versionTitle = "ESV";
 	
 	// Loads verse into the modal
-	function loadVerses() {
-		$('.verseContent').html("<p>" + verse[topic][q] + "</p>" + "<p>" + "— "  + verse[topic].location + " " + verseVersion + "</p>");
+	function loadVerse() {
+		$('.verseContent').html("<p>" + verses[topic][version] + "</p>" + "<p>" + "— "  + verses[topic].location + " " + versionTitle + "</p>");
 		$('.verseHeader').html("<h1 class='modal-title' id='prideModalLabel'>" + topic + "</h1>");
 	};
-	
-	loadVerses();
 	
 	// Switches translation
 	$('label').click(function() {
 		
 		switch ( $(this).attr('id') ) {
 						case "esv" :
-								q = 'esv';
-								verseVersion = "ESV";
+								version = 'esv';
+								versionTitle = "ESV";
 								break;
 						case "kjv" :
-								q = 'kjv';
-								verseVersion = "KJV";
+								version = 'kjv';
+								versionTitle = "KJV";
 				      break;
             case "nlt" :
-								q = 'nlt';
-								verseVersion = "NLT";
+								version = 'nlt';
+								versionTitle = "NLT";
                 break;	
 		};
 		
-		loadVerses();
-		
 	});
 	
-	
 
-	
-	
-// So instead, this works. While tedious, at least it works.	
-	
+// Calls modal after defining user-selected topic. OH SNAP, it's so simple.
 $('.topics').on ('click', '.topic', function() {
 	topic = $(this).attr('id');
-	loadVerses();
+	loadVerse();
 	$('#verseModal').modal();
 });
 						 	
