@@ -26,16 +26,13 @@ $(document).ready(function(){
 								version = 'nlt';
 								versionTitle = "NLT";
                 break;	
-		};
-		
+		};		
 	});
 	
-
-// Calls modal after defining user-selected topic. OH SNAP, it's so simple.
+// Calls modal after defining the user-selected topic. OH SNAP, it's so simple.
 $('.topics').on ('click', '.topic', function() {
 	topic = $(this).attr('id');
 	loadVerse();
 	$('#verseModal').modal();
-});
-						 	
+	});						 	
 });
