@@ -158,10 +158,16 @@ fieldset[disabled] .btn-primary.active {
 
 @media only screen and (max-width:480px) {
 
+	.btn {
+		font-weight: 700;
+	}
+	
 	.btn-default {
+		font-size: 17px;
 		height: 45px;
 		width: 80%;
 	}
+	
 	
 	
 }
