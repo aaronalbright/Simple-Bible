@@ -6,8 +6,8 @@ $(document).ready(function(){
 	
 	// Loads verse into the modal
 	function loadVerse() {
-		$('.verseContent').html("<p>" + verses[topic][version] + "</p>" + "<p>" + "— "  + verses[topic].location + " " + versionTitle + "</p>");
-		$('.verseHeader').html("<h1 class='modal-title' id='prideModalLabel'>" + topic + "</h1>");
+		$('.verseContent').html("<p>" + verses[topic][version] + "</p>" + "<p><b>" + "— "  + verses[topic].location + " " + versionTitle + "</b></p>");
+		$('.verseHeader').html("<h1 class='modal-title' id='verseModalLabel'>" + topic + "</h1>");
 	};
 	
 	// Switches translation
